@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "199386826296",
+    "firebase_url": "https://sptodoapp-6a993.firebaseio.com",
+    "project_id": "sptodoapp-6a993",
+    "storage_bucket": "sptodoapp-6a993.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199386826296:android:efbbac416401d45f",
+        "android_client_info": {
+          "package_name": "com.example.hp.todo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199386826296-25l445boko6toatkjo7pvllq9bfia03i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw8uZisxNPihWg1qZ9ooVtlQaSrjchnPY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

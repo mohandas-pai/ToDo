@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFBDBDBD"
+    tools:context="com.example.hp.todo.Help">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HELP"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textColor="#FFEF5350"
+        />
+    <TextView
+        android:layout_below="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the app\n\nTo add Text\n\t1)Enter the note in the &quot;Enter text field&quot;\n\t2)Press the &quot;Add New Item&quot; Button\n\nTo delete a Note\n\t1)Simply select the Note\n\nForgot Password?\nContact me at    amazing2196@gmail.com\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:)"
+        android:textSize="20dp"
+        android:textColor="#FFFF1744"
+        />
+
+</RelativeLayout>
