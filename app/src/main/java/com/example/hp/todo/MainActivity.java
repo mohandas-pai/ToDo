@@ -2,6 +2,7 @@ package com.example.hp.todo;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -91,9 +92,16 @@ public class MainActivity extends AppCompatActivity {
             final Button button = (Button) findViewById(R.id.addButton);
             button.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    Item item = new Item(text.getText().toString());
-                    mDatabase.child("users").child(mUserId).child("items").push().setValue(item);
-                    text.setText("");
+                    if(text.getText().toString().toLowerCase().equals("blue whale challenge")||text.getText().toString().toLowerCase().equals("suicide")||text.getText().toString().toLowerCase().equals("blue whale")){
+                        Uri uri = Uri.parse("www.google.com"); // missing 'http://' will cause crashed
+                        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                        startActivity(intent);
+                    }
+                    else {
+                        Item item = new Item(text.getText().toString());
+                        mDatabase.child("users").child(mUserId).child("items").push().setValue(item);
+                        text.setText("");
+                    }
                 }
             });
 
